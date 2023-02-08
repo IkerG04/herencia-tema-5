@@ -8,28 +8,37 @@ package tema3.herencia.hoja6;
  *
  * @author iker
  */
-public class DeDos implements Series{
+public class DeDos implements Series {
+
     private int valor;
     private int anterior;
 
     public DeDos() {
-        valor=Series.inicio;
-        anterior=Series.inicio-2;
+        valor = inicio;
+        anterior = inicio - 2;
     }
 
-    
-    
     @Override
-    public void getSiguiente() {
-            }
+    public int getSiguiente() {
+        anterior = valor;
+        valor += 2;
+        return valor;
+    }
 
     @Override
     public void reiniciar() {
-            }
+        valor = inicio;
+        anterior = inicio - 2;
+    }
 
     @Override
     public void setComenzar(int x) {
-         }
-    
-    
+        valor = x;
+        anterior = inicio - 2;
+    }
+
+    public int getAnterior() {
+        return anterior;
+    }
+
 }

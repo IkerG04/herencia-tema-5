@@ -12,6 +12,8 @@ package tema3.herencia.hoja6;
 public class HerenciaHoja6 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+      DeDos dd=new DeDos();
+      System.out.println("Valores de DeDos (iniciales):");
+      
     }
 }

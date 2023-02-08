@@ -11,18 +11,15 @@ package tema3.herencia.hoja6;
 public interface Series {
    public int inicio=0;
    
+   int getSiguiente();
+   void reiniciar();
+   void setComenzar(int x);
    
-   abstract void getSiguiente();
-   abstract void reiniciar();
-   abstract void setComenzar(int x);
-   
-   default void mostrarInicio(){
+   default public void mostrarInicio(){
        System.out.println("Inicio:"+inicio);
    }
    
-   static void nombreInterfaz(){
-       System.out.println("Nombre interfaz Series");
-       
-       
+   public static void nombreInterfaz(){
+       System.out.println("Interfaz Series");       
    }
 }
