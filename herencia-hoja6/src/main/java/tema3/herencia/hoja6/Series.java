@@ -20,6 +20,7 @@ public interface Series {
    }
    
    public static void nombreInterfaz(){
-       System.out.println("Interfaz Series");       
+       System.out.println("Interfaz Series"); 
+       System.out.println("aaaa");
    }
 }
